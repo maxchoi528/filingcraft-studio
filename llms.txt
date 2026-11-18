@@ -1,0 +1,16 @@
+# FilingCraft Studio Pro
+> Zero-server Manifest V3 browser extension (Microsoft Edge, Firefox, Chrome) that converts official U.S. SEC EDGAR XBRL filings into live cross-sheet formula Excel (.xlsx) workbooks with interactive pre-download formula preview, Altman Z-Score & Beneish M-Score forensics, and word-precision 10-K Risk Factor Redline diffs.
+
+## Key URLs
+- Homepage & Interactive Formula Sandbox: https://filingcraft-studio.pages.dev/
+- SEC EDGAR XBRL to Formula Excel (.xlsx): https://filingcraft-studio.pages.dev/sec-edgar-xbrl-excel/
+- 10-K Item 1A Risk Factor & MD&A Redline Diff: https://filingcraft-studio.pages.dev/10k-risk-factor-redline/
+- Altman Z & Beneish M Forensic Calculator: https://filingcraft-studio.pages.dev/altman-z-beneish-m-calculator/
+- German (DACH) SEC XBRL Overview: https://filingcraft-studio.pages.dev/de/
+- Generated Sample Brief (AAPL 10-K): https://filingcraft-studio.pages.dev/showcase/aapl-10k-research-brief.html
+- Privacy Policy: https://filingcraft-studio.pages.dev/privacy/
+
+## Pricing & Channels
+- Free Plan: Unlimited SEC ticker/CIK lookup, 3-year 3-statement view, live Formulas (=fx) preview grid, CSV sheet export, top 3 Item 1A Risk Redline clauses.
+- Pro Lifetime ($29.90 one-time, up to 3 devices): https://yujun57.gumroad.com/l/filingcraft-pro-lifetime
+- Pro Monthly ($5.99/mo): https://yujun57.gumroad.com/l/filingcraft-pro-monthly

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://filingcraft-studio.pages.dev/sitemap.xml

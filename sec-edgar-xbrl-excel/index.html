@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>SEC EDGAR 10-K XBRL to Formula Excel (.xlsx) Converter | FilingCraft Studio Pro</title>
+  <meta name="description" content="Convert official US SEC EDGAR companyfacts JSON into clean, multi-year, live cross-sheet formula Excel (.xlsx) workbooks containing Income Statement, Balance Sheet, Cash Flow, Altman Z, and Beneish M." />
+  <link rel="canonical" href="https://filingcraft-studio.pages.dev/sec-edgar-xbrl-excel/" />
+  <link rel="icon" type="image/png" href="../assets/icon-128.png" />
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <nav class="nav">
+    <a class="brand" href="/"><span class="mark" aria-hidden="true">F</span><span>FilingCraft Studio Pro</span></a>
+    <div class="nav-links">
+      <a href="/">Overview</a>
+      <a href="/10k-risk-factor-redline/">10-K Redline</a>
+      <a href="/altman-z-beneish-m-calculator/">Altman Z &amp; Beneish M</a>
+      <a href="/privacy/">Privacy</a>
+    </div>
+  </nav>
+  <main class="wrap">
+    <header class="hero">
+      <h1>Official SEC EDGAR XBRL to 4-Sheet Formula Excel (.xlsx), Zero Scraper Breakage.</h1>
+      <p class="lead">Yahoo Finance scrapers frequently misalign rows or silently drop prior years. FilingCraft reads statutory XBRL filings straight from <code>data.sec.gov</code> via MV3 <code>declarativeNetRequest</code> headers and builds verifiable multi-sheet Excel workbooks in pure browser memory.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="/#pricing">Get FilingCraft Pro ($29.90 Lifetime)</a>
+        <a class="btn" href="/showcase/aapl-10k-research-brief.html" target="_blank" rel="noopener">Open Sample AAPL Dossier</a>
+      </div>
+    </header>
+    <section class="section">
+      <h2>What Is Inside Every Exported Workbook?</h2>
+      <div class="grid-2">
+        <article class="card">
+          <h3>Sheet 1: Institutional Summary &amp; Forensics</h3>
+          <p>Edit Assumed Share Price in cell <code>B5</code> to recalculate Implied Market Cap (<code>=B5*'2_Income_Statement'!B14</code>), Altman X4 Equity/Liabilities ratio, Altman Z-Score, FCF Margin, and Implied FCF Yield across your desktop Office or Mac Numbers.</p>
+        </article>
+        <article class="card">
+          <h3>Sheets 2 to 4: Normalized 3 Financial Statements</h3>
+          <p>Includes live Excel formulas for Gross Profit, Free Cash Flow, Gross Margin %, Operating Margin %, Net Margin %, FCF Margin %, and YoY Revenue Growth across up to 10 fiscal years.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <span>FilingCraft Studio Pro · Direct SEC EDGAR API</span>
+    <a href="/privacy/">Privacy Policy</a>
+  </footer>
+</body>
+</html>

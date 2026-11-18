@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Altman Z-Score &amp; Beneish 8-Factor M-Score Calculator for SEC Filings | FilingCraft Studio Pro</title>
+  <meta name="description" content="Compute Altman Z-Score distress buffers and Beneish 8-variable M-Score earnings manipulation flags automatically from SEC EDGAR XBRL 10-K filings." />
+  <link rel="canonical" href="https://filingcraft-studio.pages.dev/altman-z-beneish-m-calculator/" />
+  <link rel="icon" type="image/png" href="../assets/icon-128.png" />
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <nav class="nav">
+    <a class="brand" href="/"><span class="mark" aria-hidden="true">F</span><span>FilingCraft Studio Pro</span></a>
+    <div class="nav-links">
+      <a href="/">Overview</a>
+      <a href="/sec-edgar-xbrl-excel/">XBRL to Excel</a>
+      <a href="/10k-risk-factor-redline/">10-K Redline</a>
+      <a href="/privacy/">Privacy</a>
+    </div>
+  </nav>
+  <main class="wrap">
+    <header class="hero">
+      <h1>Instant Altman Z-Score &amp; Beneish M-Score Forensics From Audited SEC XBRL Tags.</h1>
+      <p class="lead">Evaluate credit solvency and accounting accrual risk before opening a position. FilingCraft computes weighted X1–X5 Altman components and 8 Beneish indices (DSRI, GMI, AQI, SGI, DEPI, SGAI, LVGI, TATA) instantaneously whenever a company loads.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="/">Interactive Z-Score Sandbox</a>
+        <a class="btn" href="/showcase/aapl-10k-research-brief.html" target="_blank" rel="noopener">View Forensic Dossier</a>
+      </div>
+    </header>
+    <section class="section">
+      <h2>Audited Accounting Indices</h2>
+      <div class="grid-2">
+        <article class="card">
+          <h3>Altman Z-Score (Distress &lt; 1.81 | Grey | Safe &gt;= 2.99)</h3>
+          <p>Calculates <code>1.2*X1 + 1.4*X2 + 3.3*X3 + 0.6*X4 + 1.0*X5</code> using diluted share count and your optional share price quote (with transparent book equity fallback when price is omitted).</p>
+        </article>
+        <article class="card">
+          <h3>Beneish M-Score (Elevated Risk &gt; -1.78)</h3>
+          <p>Compares consecutive fiscal years across receivables intensity, gross margin compression, soft assets, sales growth, depreciation rate shifts, and total accruals to total assets (TATA).</p>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <span>FilingCraft Studio Pro · Institutional Quantitative Screening</span>
+    <a href="/privacy/">Privacy Policy</a>
+  </footer>
+</body>
+</html>

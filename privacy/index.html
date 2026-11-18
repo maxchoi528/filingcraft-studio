@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Privacy Policy | FilingCraft Studio Pro</title>
+  <meta name="description" content="FilingCraft Studio Pro runs 100% locally in your browser with zero developer servers, zero telemetry scripts, and direct SEC EDGAR XBRL requests." />
+  <link rel="canonical" href="https://filingcraft-studio.pages.dev/privacy/" />
+  <link rel="icon" type="image/png" href="../assets/icon-128.png" />
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <nav class="nav">
+    <a class="brand" href="/"><span class="mark" aria-hidden="true">F</span><span>FilingCraft Studio Pro</span></a>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/sec-edgar-xbrl-excel/">XBRL to Excel</a>
+      <a href="/10k-risk-factor-redline/">10-K Redline</a>
+    </div>
+  </nav>
+  <main class="wrap">
+    <article class="card">
+      <h1>Privacy Policy: FilingCraft Studio Pro</h1>
+      <p><strong>Zero Developer Servers &amp; Zero Telemetry:</strong> FilingCraft Studio Pro processes every financial statement, Altman Z / Beneish M calculation, 10-K Risk Redline diff, and Excel (<code>.xlsx</code>) workbook generation 100% inside your browser. No portfolio holdings, ticker searches, or spreadsheet outputs are ever transmitted to any developer-operated server.</p>
+      <h2>1. Direct U.S. SEC EDGAR Requests</h2>
+      <p>When you query a company ticker or SEC CIK, your browser communicates strictly with official public U.S. Securities and Exchange Commission endpoints (<code>https://data.sec.gov/</code> and <code>https://www.sec.gov/</code>) carrying an informational research <code>User-Agent</code> header configured via Manifest V3 <code>declarativeNetRequest</code> per SEC fair-access requirements.</p>
+      <h2>2. Local Browser Storage</h2>
+      <p>The SEC ticker directory (7-day TTL) and your most recently inspected company dossier are stored exclusively inside local browser storage (<code>chrome.storage.local</code>) and can be cleared anytime by removing the extension or clearing site data.</p>
+      <h2>3. Optional Pro License Verification</h2>
+      <p>If you purchase and enter a Gumroad Pro license key, only your license key string is sent directly to <code>https://api.gumroad.com/v2/licenses/verify</code> to confirm seat availability (up to 3 devices).</p>
+    </article>
+  </main>
+  <footer class="footer">
+    <span>FilingCraft Studio Pro · Zero-Tracking Software</span>
+    <a href="/">Back to Home</a>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" data-type="software">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="google-site-verification" content="4zUR4nkZMv16d5prI-cijpVlg1s1kQiPDKdigCU3Sx0" />
+  <title>FilingCraft Studio Pro: Official SEC EDGAR XBRL Excel (.xlsx) &amp; 10-K Risk Redline Extension</title>
+  <meta name="description" content="Pull official SEC EDGAR 10-K/10-Q XBRL statements directly inside Chrome, Edge, and Firefox. Preview live Excel formulas (=fx), calculate Altman Z-Score and Beneish M-Score, run 10-K Risk Factor Redline diffs, and download 4-sheet .xlsx models with zero servers." />
+  <link rel="canonical" href="https://filingcraft-studio.pages.dev/" />
+  <link rel="alternate" hreflang="en" href="https://filingcraft-studio.pages.dev/" />
+  <link rel="alternate" hreflang="de" href="https://filingcraft-studio.pages.dev/de/" />
+  <link rel="alternate" hreflang="x-default" href="https://filingcraft-studio.pages.dev/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="FilingCraft Studio Pro: SEC EDGAR XBRL Excel Models &amp; 10-K Redline Diff" />
+  <meta property="og:description" content="Zero-server MV3 browser extension for institutional SEC EDGAR XBRL Excel (.xlsx) modeling, Altman Z &amp; Beneish M forensics, and 10-K Risk Factor redlines." />
+  <meta property="og:url" content="https://filingcraft-studio.pages.dev/" />
+  <meta property="og:image" content="https://filingcraft-studio.pages.dev/assets/screenshot-1.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="FilingCraft Studio Pro: SEC EDGAR XBRL Excel &amp; 10-K Risk Redline" />
+  <meta name="twitter:description" content="Compile live cross-sheet Excel (.xlsx) models and 10-K Risk Factor Redline diffs directly from official SEC XBRL data." />
+  <meta name="twitter:image" content="https://filingcraft-studio.pages.dev/assets/screenshot-1.png" />
+  <link rel="icon" type="image/png" href="./assets/icon-128.png" />
+  <link rel="stylesheet" href="./assets/style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "FilingCraft Studio Pro",
+    "alternateName": "FilingCraft: SEC EDGAR XBRL Excel & 10-K Risk Redline",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Windows, macOS, Linux (Microsoft Edge, Firefox, Google Chrome)",
+    "url": "https://filingcraft-studio.pages.dev/",
+    "softwareVersion": "1.0.0",
+    "featureList": [
+      "Direct SEC EDGAR public API XBRL companyfacts normalization (zero web scraping errors)",
+      "Live interactive 4-sheet Excel (.xlsx) workbook preview with Formulas (=fx) X-Ray mode",
+      "Cross-sheet Excel formulas linking Share Price assumptions cleanly across Windows Excel, macOS Excel, and Apple Numbers",
+      "Altman Z-Score 5-component bankruptcy forensics and Beneish 8-Factor M-Score accruals screening",
+      "Year-over-year 10-K Item 1A Risk Factors & Item 7 MD&A Redline Diff with Table of Contents anchor skipping"
+    ],
+    "offers": [
+      { "@type": "Offer", "price": "0.00", "priceCurrency": "USD", "name": "Free Edition (3-Year History & Live Preview)" },
+      { "@type": "Offer", "price": "29.90", "priceCurrency": "USD", "name": "Pro Lifetime License", "url": "https://yujun57.gumroad.com/l/filingcraft-pro-lifetime" },
+      { "@type": "Offer", "price": "5.99", "priceCurrency": "USD", "name": "Pro Monthly", "url": "https://yujun57.gumroad.com/l/filingcraft-pro-monthly" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How does FilingCraft prevent Yahoo Finance scraper mistakes and misaligned columns?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Instead of scraping third-party HTML tables, FilingCraft Studio Pro queries data.sec.gov/api/xbrl/companyfacts directly, deduplicates repeated comparative frames inside 10-K filings by fiscal endDate and latest filed restatement, filters out quarterly sub-300-day flow slices, and derives Gross Profit and Free Cash Flow cleanly."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I inspect the Excel formulas and sheets before downloading or upgrading?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. FilingCraft includes a built-in Workbook Previewer rendered from the exact OpenXML model. Toggle Formulas (=fx) and click any cell to inspect live cross-sheet references and edit Assumed Share Price (B5) in real time before compiling your .xlsx file."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does the exported Excel (.xlsx) workbook calculate cleanly across Windows Excel, macOS Excel, and Apple Numbers?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The pure-client OpenXML generator emits standard ECMA-376 spreadsheets using universal Excel functions (IF, ABS, arithmetic, cross-sheet references) without modern _xlfn. prefixes or macros, verified across strict OpenXML parsers and headless spreadsheet recalculation."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <nav class="nav" aria-label="Primary Navigation">
+    <a class="brand" href="/">
+      <span class="mark" aria-hidden="true">F</span>
+      <span>FilingCraft Studio Pro</span>
+    </a>
+    <div class="nav-links">
+      <a href="/sec-edgar-xbrl-excel/">XBRL to Excel</a>
+      <a href="/10k-risk-factor-redline/">10-K Risk Redline</a>
+      <a href="/altman-z-beneish-m-calculator/">Altman Z &amp; Beneish M</a>
+      <a href="/showcase/aapl-10k-research-brief.html">Sample Brief</a>
+      <a href="/de/">DE</a>
+      <a href="/privacy/">Privacy</a>
+    </div>
+  </nav>
+
+  <main class="wrap">
+    <header class="hero">
+      <h1>Official SEC EDGAR XBRL into Formula Excel (.xlsx) &amp; 10-K Risk Redlines, Right in Your Browser.</h1>
+      <p class="lead">Stop fixing broken Yahoo Finance scrapes or manually reading 80-page 10-K risk disclosures. FilingCraft pulls structured US-GAAP facts straight from <code>data.sec.gov</code>, calculates Altman Z &amp; Beneish M forensics, previews every Excel formula live on screen, and highlights every added, revised, and removed 10-K risk clause with zero backend servers.</p>
+      <div class="cta-row">
+        <a id="store-edge-cta" class="btn btn-primary" href="#pricing">Get for Microsoft Edge &amp; Chrome</a>
+        <a id="store-firefox-cta" class="btn btn-ink" href="#pricing">Get for Firefox Add-ons</a>
+        <a class="btn" href="/showcase/aapl-10k-research-brief.html" target="_blank" rel="noopener">Inspect Sample AAPL Research Brief</a>
+      </div>
+    </header>
+
+    <section class="section" aria-label="Interactive Formula Preview Sandbox">
+      <h2>Preview What FilingCraft Generates Before You Install</h2>
+      <div class="sandbox-shell">
+        <div class="sandbox-bar">
+          <div class="seg-tabs">
+            <button type="button" class="seg-tab is-active" data-demo-sheet="0">1_Summary_Scores</button>
+            <button type="button" class="seg-tab" data-demo-sheet="1">2_Income_Statement</button>
+          </div>
+          <div class="cta-row">
+            <label for="fc-demo-price" class="mono">Share Price ($)</label>
+            <input id="fc-demo-price" class="price-input" type="number" step="0.5" min="0" value="225.5" />
+            <div class="seg-tabs">
+              <button type="button" class="seg-tab is-active" data-demo-mode="values">Values</button>
+              <button type="button" class="seg-tab" data-demo-mode="formulas">Formulas (=fx)</button>
+            </div>
+          </div>
+        </div>
+        <div class="fx-bar">
+          <span id="fc-demo-ref" class="fx-ref">B14</span>
+          <strong>fx</strong>
+          <span id="fc-demo-fx">=1.2*B9+1.4*B10+3.3*B11+0.6*B12+1.0*B13</span>
+        </div>
+        <div class="table-scroll">
+          <table class="xl-table">
+            <thead id="fc-demo-thead"></thead>
+            <tbody id="fc-demo-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Core Capabilities">
+      <h2>Built for Analysts Who Demand Audit-Grade Accuracy</h2>
+      <div class="grid-3">
+        <article class="card">
+          <h3>Official XBRL Normalization</h3>
+          <p>Eliminates comparative frame duplicates inside 10-K filings by keeping the latest restated filing per fiscal end date and separating annual flows (&gt;=300 days) from quarterly slices automatically.</p>
+        </article>
+        <article class="card">
+          <h3>Live 4-Sheet Formula .xlsx</h3>
+          <p>Downloads standard OpenXML spreadsheets (<code>1_Summary_Scores</code>, <code>2_Income_Statement</code>, <code>3_Balance_Sheet</code>, <code>4_Cash_Flow</code>) where changing Share Price B5 recalculates Market Cap, Altman X4, and FCF Yield automatically.</p>
+        </article>
+        <article class="card">
+          <h3>10-K Risk Factor Redline</h3>
+          <p>Skips deceptive Table of Contents anchors, compares prior vs. current Item 1A Risk Factors and Item 7 MD&amp;A paragraphs with word-level LCS diffing, and filters disclosures by added, revised, removed, or keyword.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Extension Screenshots">
+      <h2>Actual Extension Screens (Archival Folio &amp; Pro Night Desk)</h2>
+      <div class="shot-grid">
+        <figure class="shot-card">
+          <img src="./assets/screenshot-1.png" width="1280" height="800" alt="FilingCraft Studio Pro Broadsheet Masthead, Altman Z Spectrum, and Multi-Year Revenue Chart" loading="lazy" />
+          <figcaption>Archival Folio Research Desk: Broadsheet forensic verdict, Altman 5-factor breakdown, and interactive SVG chart telemetry.</figcaption>
+        </figure>
+        <figure class="shot-card">
+          <img src="./assets/screenshot-2.png" width="1280" height="800" alt="Interactive Workbook Preview showing Formulas (=fx) mode and Blue Share Price Input cell" loading="lazy" />
+          <figcaption>Transparent Excel Previewer: Inspect cross-sheet formulas (=IF, =B5*Shares) and editable blue input cells before compiling .xlsx.</figcaption>
+        </figure>
+        <figure class="shot-card">
+          <img src="./assets/screenshot-3.png" width="1280" height="800" alt="Night Desk Obsidian Dark Theme showing 10-K Risk Factor Redline Diff and keyword filtering" loading="lazy" />
+          <figcaption>Pro Night Desk Theme: Word-precision 10-K Item 1A Risk Redline diffing with Added, Revised, Removed, and keyword search filters.</figcaption>
+        </figure>
+        <figure class="shot-card">
+          <img src="./assets/screenshot-4.png" width="1280" height="800" alt="FilingCraft Studio Pro Printable Executive Research Brief Preview" loading="lazy" />
+          <figcaption>Print-Ready Executive Brief Preview: Clean HTML &amp; Vector PDF dossier generated 100% locally in the browser.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="pricing" class="section" aria-label="Pricing Tiers">
+      <h2>Simple Pricing Without Per-Ticker Subscriptions</h2>
+      <div class="grid-2">
+        <article class="card">
+          <span class="badge">Free Plan · $0</span>
+          <h3>Essential XBRL &amp; Formula Preview</h3>
+          <p>Unlimited US Ticker / CIK lookup directly from SEC EDGAR, 3-Year 3-Statement view, Altman Z &amp; Beneish M forensics, full interactive formula preview grid, CSV sheet export, and top 3 Item 1A Redline clause shifts.</p>
+        </article>
+        <article class="card">
+          <span class="badge badge-good">Pro License · Up to 3 Devices</span>
+          <h3>Full 10-Year Workbook &amp; Redline Suite</h3>
+          <p>Unlock 10-Year 4-Sheet live formula Excel (<code>.xlsx</code>) downloads, complete unclipped 10-K Risk &amp; MD&amp;A Redline comparisons, clean unwatermarked HTML/PDF Briefs, and the Obsidian Night Desk terminal.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="https://yujun57.gumroad.com/l/filingcraft-pro-lifetime" target="_blank" rel="noopener">Lifetime ($29.90 One-Time)</a>
+            <a class="btn" href="https://yujun57.gumroad.com/l/filingcraft-pro-monthly" target="_blank" rel="noopener">Monthly ($5.99/mo)</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>FilingCraft Studio Pro · Zero-Server SEC EDGAR XBRL Architecture</span>
+    <div class="nav-links">
+      <a href="/llms.txt">llms.txt</a>
+      <a href="/sitemap.xml">sitemap.xml</a>
+      <a href="/privacy/">Privacy Policy</a>
+    </div>
+  </footer>
+
+  <script src="./assets/demo.js"></script>
+</body>
+</html>
