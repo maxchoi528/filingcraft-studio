@@ -93,6 +93,24 @@ a:focus-visible, button:focus-visible, input:focus-visible { outline: 2px solid 
 
 .nav-links a { color: var(--ink); }
 
+.site-lb { position: relative; display: inline-block; }
+.site-lb-btn {
+  height: 32px; padding: 0 10px; border-radius: 3px; border: 1px solid var(--border);
+  background-color: var(--surface); color: var(--ink); font-size: 13px; font-weight: 600;
+  display: inline-flex; align-items: center; gap: 6px; cursor: pointer;
+}
+.site-lb-btn:hover { background-color: var(--surface-2); }
+.site-lb-menu {
+  position: absolute; top: calc(100% + 4px); right: 0; min-width: 170px; margin: 0; padding: 4px;
+  list-style: none; background-color: var(--surface); border: 1px solid var(--ink);
+  border-radius: 3px; z-index: 40;
+}
+.site-lb-opt {
+  padding: 6px 9px; font-size: 13px; color: var(--ink); border-radius: 2px; cursor: pointer;
+}
+.site-lb-opt:hover, .site-lb-opt:focus { outline: none; background-color: var(--surface-2); }
+.site-lb-opt.is-sel { font-weight: 700; background-color: var(--accent-soft); color: var(--accent); }
+
 .wrap {
   max-width: 1140px;
   margin: 0 auto;

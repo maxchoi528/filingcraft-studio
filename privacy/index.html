@@ -13,14 +13,15 @@
   <nav class="nav">
     <a class="brand" href="/"><span class="mark" aria-hidden="true">F</span><span>FilingCraft Studio Pro</span></a>
     <div class="nav-links">
-      <a href="/">Home</a>
-      <a href="/sec-edgar-xbrl-excel/">XBRL to Excel</a>
-      <a href="/10k-risk-factor-redline/">10-K Redline</a>
+      <a href="/" data-site-i18n="navOverview">Home</a>
+      <a href="/sec-edgar-xbrl-excel/" data-site-i18n="navExcel">XBRL to Excel</a>
+      <a href="/10k-risk-factor-redline/" data-site-i18n="navRedline">10-K Redline</a>
+      <div id="fc-site-lang"></div>
     </div>
   </nav>
   <main class="wrap">
     <article class="card">
-      <h1>Privacy Policy: FilingCraft Studio Pro</h1>
+      <h1 data-site-i18n="privacyH1">Privacy Policy: FilingCraft Studio Pro</h1>
       <p><strong>Zero Developer Servers &amp; Zero Telemetry:</strong> FilingCraft Studio Pro processes every financial statement, Altman Z / Beneish M calculation, 10-K Risk Redline diff, and Excel (<code>.xlsx</code>) workbook generation 100% inside your browser. No portfolio holdings, ticker searches, or spreadsheet outputs are ever transmitted to any developer-operated server.</p>
       <h2>1. Direct U.S. SEC EDGAR Requests</h2>
       <p>When you query a company ticker or SEC CIK, your browser communicates strictly with official public U.S. Securities and Exchange Commission endpoints (<code>https://data.sec.gov/</code> and <code>https://www.sec.gov/</code>) carrying an informational research <code>User-Agent</code> header configured via Manifest V3 <code>declarativeNetRequest</code> per SEC fair-access requirements.</p>
@@ -32,7 +33,8 @@
   </main>
   <footer class="footer">
     <span>FilingCraft Studio Pro · Zero-Tracking Software</span>
-    <a href="/">Back to Home</a>
+    <a href="/" data-site-i18n="navOverview">Back to Home</a>
   </footer>
+  <script src="../assets/i18n-site.js"></script>
 </body>
 </html>

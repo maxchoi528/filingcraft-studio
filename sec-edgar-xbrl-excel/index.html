@@ -13,19 +13,20 @@
   <nav class="nav">
     <a class="brand" href="/"><span class="mark" aria-hidden="true">F</span><span>FilingCraft Studio Pro</span></a>
     <div class="nav-links">
-      <a href="/">Overview</a>
-      <a href="/10k-risk-factor-redline/">10-K Redline</a>
-      <a href="/altman-z-beneish-m-calculator/">Altman Z &amp; Beneish M</a>
-      <a href="/privacy/">Privacy</a>
+      <a href="/" data-site-i18n="navOverview">Overview</a>
+      <a href="/10k-risk-factor-redline/" data-site-i18n="navRedline">10-K Redline</a>
+      <a href="/altman-z-beneish-m-calculator/" data-site-i18n="navAltman">Altman Z &amp; Beneish M</a>
+      <a href="/privacy/" data-site-i18n="navPrivacy">Privacy</a>
+      <div id="fc-site-lang"></div>
     </div>
   </nav>
   <main class="wrap">
     <header class="hero">
-      <h1>Official SEC EDGAR XBRL to 4-Sheet Formula Excel (.xlsx), Zero Scraper Breakage.</h1>
+      <h1 data-site-i18n="subExcelH1">Official SEC EDGAR XBRL to 4-Sheet Formula Excel (.xlsx), Zero Scraper Breakage.</h1>
       <p class="lead">Yahoo Finance scrapers frequently misalign rows or silently drop prior years. FilingCraft reads statutory XBRL filings straight from <code>data.sec.gov</code> via MV3 <code>declarativeNetRequest</code> headers and builds verifiable multi-sheet Excel workbooks in pure browser memory.</p>
       <div class="cta-row">
-        <a class="btn btn-primary" href="/#pricing">Get FilingCraft Pro ($29.90 Lifetime)</a>
-        <a class="btn" href="/showcase/aapl-10k-research-brief.html" target="_blank" rel="noopener">Open Sample AAPL Dossier</a>
+        <a class="btn btn-primary" href="/#pricing" data-site-i18n="btnLifetime">Get FilingCraft Pro ($29.90 Lifetime)</a>
+        <a class="btn" href="/showcase/aapl-10k-research-brief.html" target="_blank" rel="noopener" data-site-i18n="ctaBrief">Open Sample AAPL Dossier</a>
       </div>
     </header>
     <section class="section">
@@ -44,7 +45,8 @@
   </main>
   <footer class="footer">
     <span>FilingCraft Studio Pro · Direct SEC EDGAR API</span>
-    <a href="/privacy/">Privacy Policy</a>
+    <a href="/privacy/" data-site-i18n="navPrivacy">Privacy Policy</a>
   </footer>
+  <script src="../assets/i18n-site.js"></script>
 </body>
 </html>
