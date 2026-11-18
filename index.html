@@ -158,19 +158,27 @@
       <h2 data-site-i18n="shotsH2">Actual Extension Screens (Archival Folio &amp; Pro Night Desk)</h2>
       <div class="shot-grid">
         <figure class="shot-card">
-          <img src="./assets/screenshot-1.png" width="1280" height="800" alt="FilingCraft Studio Pro Broadsheet Masthead, Altman Z Spectrum, and Multi-Year Revenue Chart" loading="lazy" />
+          <button type="button" class="shot-trigger" aria-label="Zoom preview: Archival Folio Research Desk">
+            <img src="./assets/screenshot-1.png" width="1280" height="800" alt="FilingCraft Studio Pro Broadsheet Masthead, Altman Z Spectrum, and Multi-Year Revenue Chart" loading="lazy" />
+          </button>
           <figcaption>Archival Folio Research Desk: Broadsheet forensic verdict, Altman 5-factor breakdown, and interactive SVG chart telemetry.</figcaption>
         </figure>
         <figure class="shot-card">
-          <img src="./assets/screenshot-2.png" width="1280" height="800" alt="Interactive Workbook Preview showing Formulas (=fx) mode and Blue Share Price Input cell" loading="lazy" />
+          <button type="button" class="shot-trigger" aria-label="Zoom preview: Interactive Workbook Formulas (=fx)">
+            <img src="./assets/screenshot-2.png" width="1280" height="800" alt="Interactive Workbook Preview showing Formulas (=fx) mode and Blue Share Price Input cell" loading="lazy" />
+          </button>
           <figcaption>Transparent Excel Previewer: Inspect cross-sheet formulas (=IF, =B5*Shares) and editable blue input cells before compiling .xlsx.</figcaption>
         </figure>
         <figure class="shot-card">
-          <img src="./assets/screenshot-3.png" width="1280" height="800" alt="Night Desk Obsidian Dark Theme showing 10-K Risk Factor Redline Diff and keyword filtering" loading="lazy" />
+          <button type="button" class="shot-trigger" aria-label="Zoom preview: Night Desk 10-K Risk Redline">
+            <img src="./assets/screenshot-3.png" width="1280" height="800" alt="Night Desk Obsidian Dark Theme showing 10-K Risk Factor Redline Diff and keyword filtering" loading="lazy" />
+          </button>
           <figcaption>Pro Night Desk Theme: Word-precision 10-K Item 1A Risk Redline diffing with Added, Revised, Removed, and keyword search filters.</figcaption>
         </figure>
         <figure class="shot-card">
-          <img src="./assets/screenshot-4.png" width="1280" height="800" alt="FilingCraft Studio Pro Printable Executive Research Brief Preview" loading="lazy" />
+          <button type="button" class="shot-trigger" aria-label="Zoom preview: Print-Ready Executive Research Brief">
+            <img src="./assets/screenshot-4.png" width="1280" height="800" alt="FilingCraft Studio Pro Printable Executive Research Brief Preview" loading="lazy" />
+          </button>
           <figcaption>Print-Ready Executive Brief Preview: Clean HTML &amp; Vector PDF dossier generated 100% locally in the browser.</figcaption>
         </figure>
       </div>
@@ -205,6 +213,23 @@
       <a href="/privacy/" data-site-i18n="navPrivacy">Privacy Policy</a>
     </div>
   </footer>
+
+  <div id="fc-lightbox" class="lightbox-backdrop" role="dialog" aria-modal="true" aria-label="Enlarged Extension Screenshot Preview" hidden>
+    <div class="lightbox-dialog">
+      <div class="lightbox-head">
+        <span id="fc-lb-counter" class="badge">1 / 4</span>
+        <div class="cta-row">
+          <button type="button" id="fc-lb-prev" class="btn btn-sm">&larr; Prev</button>
+          <button type="button" id="fc-lb-next" class="btn btn-sm">Next &rarr;</button>
+          <button type="button" id="fc-lb-close" class="btn btn-ink btn-sm">Close (Esc)</button>
+        </div>
+      </div>
+      <div class="lightbox-stage">
+        <img id="fc-lb-img" src="./assets/screenshot-1.png" alt="Enlarged extension preview" />
+      </div>
+      <p id="fc-lb-cap" class="lightbox-caption"></p>
+    </div>
+  </div>
 
   <script src="./assets/i18n-site.js"></script>
   <script src="./assets/demo.js"></script>

@@ -146,4 +146,62 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   render();
+
+  // Accessible Screenshot Lightbox Zoom Modal
+  var triggers = Array.prototype.slice.call(document.querySelectorAll('.shot-trigger'));
+  var lbModal = document.getElementById('fc-lightbox');
+  var lbImg = document.getElementById('fc-lb-img');
+  var lbCap = document.getElementById('fc-lb-cap');
+  var lbCount = document.getElementById('fc-lb-counter');
+  var lbPrev = document.getElementById('fc-lb-prev');
+  var lbNext = document.getElementById('fc-lb-next');
+  var lbClose = document.getElementById('fc-lb-close');
+  var activeShotIdx = 0;
+  var lastFocusedEl = null;
+
+  function showLightbox(idx) {
+    if (!lbModal || triggers.length === 0) return;
+    activeShotIdx = ((idx % triggers.length) + triggers.length) % triggers.length;
+    var trigger = triggers[activeShotIdx];
+    var img = trigger.querySelector('img');
+    var cap = trigger.parentElement ? trigger.parentElement.querySelector('figcaption') : null;
+    if (img && lbImg) {
+      lbImg.src = img.getAttribute('src') || '';
+      lbImg.alt = img.getAttribute('alt') || 'Extension preview';
+    }
+    if (lbCap) lbCap.textContent = cap ? cap.textContent : '';
+    if (lbCount) lbCount.textContent = (activeShotIdx + 1) + ' / ' + triggers.length;
+    lbModal.hidden = false;
+    if (lbClose) lbClose.focus();
+  }
+
+  function closeLightbox() {
+    if (!lbModal) return;
+    lbModal.hidden = true;
+    if (lastFocusedEl && typeof lastFocusedEl.focus === 'function') {
+      lastFocusedEl.focus();
+    }
+  }
+
+  triggers.forEach(function (btn, idx) {
+    btn.addEventListener('click', function () {
+      lastFocusedEl = btn;
+      showLightbox(idx);
+    });
+  });
+
+  if (lbPrev) lbPrev.addEventListener('click', function () { showLightbox(activeShotIdx - 1); });
+  if (lbNext) lbNext.addEventListener('click', function () { showLightbox(activeShotIdx + 1); });
+  if (lbClose) lbClose.addEventListener('click', closeLightbox);
+  if (lbModal) {
+    lbModal.addEventListener('click', function (ev) {
+      if (ev.target === lbModal) closeLightbox();
+    });
+  }
+  document.addEventListener('keydown', function (ev) {
+    if (!lbModal || lbModal.hidden) return;
+    if (ev.key === 'Escape') closeLightbox();
+    else if (ev.key === 'ArrowRight') showLightbox(activeShotIdx + 1);
+    else if (ev.key === 'ArrowLeft') showLightbox(activeShotIdx - 1);
+  });
 });
