@@ -10,6 +10,10 @@
 - Generated Sample Brief (AAPL 10-K): https://filingcraft-studio.pages.dev/showcase/aapl-10k-research-brief.html
 - Privacy Policy: https://filingcraft-studio.pages.dev/privacy/
 
+## Official Distribution & Store Channels
+- Microsoft Edge Add-ons (v1.0.1 In Review): https://microsoftedge.microsoft.com/addons/detail/kaoichafigghccijafmdpgjpmnjdlocm
+- Firefox Add-ons (AMO, v1.0.1 Awaiting Review): https://addons.mozilla.org/en-US/firefox/addon/filingcraft-studio-pro/
+
 ## Pricing & Channels
 - Free Plan: Unlimited SEC ticker/CIK lookup, 3-year 3-statement view, live Formulas (=fx) preview grid, CSV sheet export, top 3 Item 1A Risk Redline clauses.
 - Pro Lifetime ($29.90 one-time, up to 3 devices): https://yujun57.gumroad.com/l/filingcraft-pro-lifetime
